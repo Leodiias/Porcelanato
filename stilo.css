@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+button {
+    color: white;
+    background-color: #2d32cf;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-pai {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.caixa-pai button:hover {
+    transition: 1s ease-in-out;
+    font-size: 15px;
+    color: black;
+}
+
+.caixa-informativa {
+
+    color: rgb(255, 255, 255);
+    width: 40%;
+    font-size: 24px;
+}
+
+.caixa-informativa img {
+    height: 300px;
+    border-radius: 15px;
+}
+
+.caixa-informativa h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.caixa-informativa p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara {
+    height: 100%;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.botao-whatsapp img {
+    height: 70px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.cabecalho img {
+    height: 80px;
+    border-radius: 35px;
+}
+
+.cabecalho a {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cabecalho a:hover {
+    color: #452edb;
+    transition: 0.5s ease-in-out;
+    font-size: 32px;
+}
+
+.fale-conosco {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 7px;
+    gap: 18px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px #716d6d solid;
+    padding-left: 7px;
+    outline-color: #2926c3;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px #716d6d solid;
+    padding-left: 7px;
+    outline-color: #2b27dd;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+.estampa {
+    color: #fefeff;
+    font-size: 60px;
+    font-style: oblique;
+    position: fixed;
+    right: 0%;
+    margin-top: 50px;
+    margin-right: 75px;
+
+}
+
+@media(max-width: 1099px) {
+    p {
+        display: none;
+    }
+    .caixa-pai {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        display: flex;
+    }
+    .caixa-informativa {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .foto-demonstrativa {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        margin-top: 30px;
+    }
+    .foto-demonstrativa2 {
+        display: flex;
+        margin-top: 10px;
+    }
+
+.cabecalho {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabecalho img {
+    display: none;
+}
+.cabecalho a {
+    font-size: 20px;
+    align-items: center;
+    margin: -11px;
+    
+}
+.foto-demonstrativa {
+    width: 60vw;
+    height: auto;
+}
+.mascara-formulario {
+    width: 1100px;
+    height: 2500px;
+    
+}
+.foto-demonstrativa img{
+    width: 175px;
+    height: 175px;
+}
+.foto-demonstrativa2 img{
+    width: 175px;
+    height: 175px;
+}
+}
